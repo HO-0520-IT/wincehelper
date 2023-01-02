@@ -1,0 +1,11 @@
+///////////////////////////////////////////////////////////////////////////////
+//  wincehelper.h
+//  WinCE での動作を前提としていないプログラムを
+//  WinCE で動かせるようにするための自作関数のヘッダ
+//  (C) HO_0520_IT
+///////////////////////////////////////////////////////////////////////////////
+
+
+char *wceh_getcwd(char *buffer, int maxlen);
+int wceh_CHDIR(const char *dirname);
+FILE *wceh_fopen(const char *filename, const char *mode);
